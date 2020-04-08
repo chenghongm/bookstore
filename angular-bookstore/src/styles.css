@@ -4,6 +4,6 @@
     src: url(/assets/fonts/Oswald/static/Oswald-Regular.ttf) format("truetype");
 }
 
-h1{
+body{
     font-family: 'Oswald';
 }
