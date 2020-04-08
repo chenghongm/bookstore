@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: 'Oswald';
+    src: url(/assets/fonts/Oswald/static/Oswald-Regular.ttf) format("truetype");
+}
+
+h1{
+    font-family: 'Oswald';
+}
