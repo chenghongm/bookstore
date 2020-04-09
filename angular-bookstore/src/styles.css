@@ -17,3 +17,30 @@ h1{
 body{
     padding-top: 56px;
 }
+
+body,htmal{
+    height: 100%;
+
+}
+
+.footer{
+    position:absolute;
+    bottom: 10px;
+    height: 60px;
+}
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+.content{
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
