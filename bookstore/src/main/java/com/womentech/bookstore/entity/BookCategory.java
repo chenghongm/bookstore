@@ -17,7 +17,6 @@ import lombok.ToString;
 
 @Entity
 @Table(name="tbl_category")
-
 public class BookCategory {
 	
 	@Id
