@@ -12,10 +12,13 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.womentech.bookstore.entity.Book;
 
-@CrossOrigin("http://localhost:4203")
+
 public interface BookRepository extends JpaRepository<Book, Long>{
 		
 	@RestResource(path = "categoryid")
 	Page<Book>  findByCategoryId(@Param("id") Long id, Pageable pageable );
+	
+	@RestResource(path = "searchbykeyword")
+	Page<Book>  findByNameContaining(@Param("name") String  keyword, Pageable pageable );
 	
 }
