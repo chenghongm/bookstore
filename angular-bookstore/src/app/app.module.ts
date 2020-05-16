@@ -12,6 +12,8 @@ import { BookCategoryComponent } from './components/book-category/book-category.
 import { SearchComponent } from './components/search/search.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
 import { CartStatusComponent } from './components/cart-status/cart-status.component';
+import { JwPaginationComponent} from 'jw-angular-pagination';
+
 
 const routes: Routes = [
   {path: 'books/:id', component: BookDetailsComponent},
@@ -31,7 +33,8 @@ const routes: Routes = [
     BookCategoryComponent,
     SearchComponent,
     BookDetailsComponent,
-    CartStatusComponent
+    CartStatusComponent,
+    JwPaginationComponent
   ],
   imports: [
     BrowserModule,
