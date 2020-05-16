@@ -14,17 +14,20 @@
       <div class="row">
        <div class="col-12 col-md-4">
             <div class="thumbnail">
-                <img src="https://placehold.it/250*300" />
+                <img src="{{book.imageUrl}}" width="250" height="300" />
             </div>
        </div>
 
        <div class="col-12 col-md-8">
-           <h3>Introduction to Python</h3>
+           <h3>{{book.name}}</h3>
            <hr/>
-           <p>The description goes here...</p>
+           <p>{{book.description}}</p>
            <hr/>
 
-           <h4>Price: <strong>&#36;200</strong></h4>
+           <h4>Price: <strong>{{book.unitPrice | currency: 'USD'}}</strong></h4>
+           <hr/>
+
+           <h6>Qty.Available: {{book.unitsInstock}}</h6>
            <hr/>
 
            <a routerLink="/books" class="btn btn-success">
