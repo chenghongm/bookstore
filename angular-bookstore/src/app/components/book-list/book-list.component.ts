@@ -13,6 +13,7 @@ export class BookListComponent implements OnInit {
   currentCategoryId: number;
   searchMode: boolean;
   counter: number
+  p : number = 3
   
    constructor( private _bookSerive: BookService, private _activedRoute: ActivatedRoute) { }
 
@@ -22,7 +23,7 @@ export class BookListComponent implements OnInit {
      this.listBooks();
     })
   }
-  
+    
   
     listBooks(){
       

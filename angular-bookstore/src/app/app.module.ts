@@ -1,9 +1,10 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 
-
+import { NgxPaginationModule} from 'ngx-pagination'
 import { AppComponent } from './app.component';
 import { BookListComponent } from './components/book-list/book-list.component';
 import { BookService } from './serives/book.service';
@@ -12,8 +13,6 @@ import { BookCategoryComponent } from './components/book-category/book-category.
 import { SearchComponent } from './components/search/search.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
 import { CartStatusComponent } from './components/cart-status/cart-status.component';
-import { JwPaginationComponent} from 'jw-angular-pagination';
-
 
 const routes: Routes = [
   {path: 'books/:id', component: BookDetailsComponent},
@@ -27,18 +26,21 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
+   
     AppComponent,
     BookListComponent,
     PageNotFoundComponent,
     BookCategoryComponent,
     SearchComponent,
     BookDetailsComponent,
-    CartStatusComponent,
-    JwPaginationComponent
+    CartStatusComponent  
+    
+   
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    NgxPaginationModule,
     RouterModule.forRoot(routes)
   ],
   providers: [
